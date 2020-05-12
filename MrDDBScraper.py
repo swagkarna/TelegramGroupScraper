@@ -5,7 +5,7 @@ import csv
  
 api_id = 1220947
 api_hash = '70b7ad00c15cb808246cae4f4672ead8'
-phone = '+14092879489'
+phone = '+xxxxxxxxxxx'
 client = TelegramClient(phone, api_id, api_hash)
  
 client.connect()
