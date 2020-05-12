@@ -11,12 +11,8 @@ Message Me :- https://t.me/MrDDB
 How Start Scraping.
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/indianbhaiya/IndianBot
-cd Indianbot
-virtualenv -p /usr/bin/python3 venv
-. ./venv/bin/activate
-pip install -r requirements.txt
-# <Create local_config.py with variables as given below>
-python3 -m userbot
+git clone https://github.com/MRDDB/TelegramGroupScraper
+cd TelegramGroupScraper
+python3 
 ```
 
