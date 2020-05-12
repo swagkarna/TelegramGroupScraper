@@ -13,6 +13,6 @@ Simply clone the repository and run the main file:
 ```sh
 git clone https://github.com/MRDDB/TelegramGroupScraper
 cd TelegramGroupScraper
-python3 
+python3 MrDDBScraper.py
 ```
 
