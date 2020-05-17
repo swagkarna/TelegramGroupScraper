@@ -11,8 +11,11 @@ Message Me :- https://t.me/MrDDB
 How Start Scraping.
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/MRDDB/TelegramGroupScraper
+termux-setup-storage
+pkg install -y git python
+python3 -m pip install telethon
+cd /sdcard
+git clone https://github.com/MrDDB/TelegramGroupScraper
 cd TelegramGroupScraper
-python3 MrDDBScraper.py
 ```
 
