@@ -3,9 +3,9 @@ from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 import csv
  
-api_id = 1220947
-api_hash = '70b7ad00c15cb808246cae4f4672ead8'
-phone = '+xxxxxxxxxxx'
+api_id = 1049984
+api_hash = 'b761cd6f412e62cce12b0cceb0d4e3f1'
+phone = '+17062523105'
 client = TelegramClient(phone, api_id, api_hash)
  
 client.connect()
@@ -53,21 +53,12 @@ all_participants = client.get_participants(target_group, aggressive=True)
 print('Saving In file...')
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
-    writer.writerow(['username','user id', 'access hash','name','group', 'group id'])
+    writer.writerow(['username'])
     for user in all_participants:
         if user.username:
             username= user.username
         else:
             username= ""
-        if user.first_name:
-            first_name= user.first_name
-        else:
-            first_name= ""
-        if user.last_name:
-            last_name= user.last_name
-        else:
-            last_name= ""
-        name= (first_name + ' ' + last_name).strip()
-        writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])      
+        writer.writerow([username])      
 print('Members scraped successfully.')
 print('Subscribe My Youtube Channel. Thanks For Use This Script.')
