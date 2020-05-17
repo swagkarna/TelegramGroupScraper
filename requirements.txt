@@ -1,4 +1,0 @@
-telethon
-csv
-traceback2
-python-csv
